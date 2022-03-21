@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "915009640156",
+    "project_id": "elec-288c2",
+    "storage_bucket": "elec-288c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915009640156:android:84e9a988092a46f7604619",
+        "android_client_info": {
+          "package_name": "com.example.elec_clone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915009640156-0edurna3q0k16itqk2lm05p8h0s17st1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4YNO9m_b1UYfzPcgQGQhFvm1jCW2wiNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915009640156-0edurna3q0k16itqk2lm05p8h0s17st1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
