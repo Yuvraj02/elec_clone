@@ -1,3 +1,4 @@
+import 'package:elec_clone/screens/HomePage.dart';
 import 'package:elec_clone/screens/auth_screens/auto_login_check.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const AuthController(),
+      home: const Home(),
     );
   }
 }
