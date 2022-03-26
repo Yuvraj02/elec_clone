@@ -1,4 +1,4 @@
-import 'package:elec_clone/screens/auth_helper.dart';
+import 'package:elec_clone/helper_classes/auth_helper.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 

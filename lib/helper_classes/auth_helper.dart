@@ -6,7 +6,7 @@ class AuthenticationHelper {
   static final FirebaseAuth _auth = FirebaseAuth.instance;
   static String verificationIDRecieved = "";
 
-  get user => _auth.currentUser;
+  static get user => _auth.currentUser;
 
   static Future signUp(String email, String password) async {
     try {
@@ -23,6 +23,7 @@ class AuthenticationHelper {
   static Future signIn(String email, String password) async {
     try {
       await _auth.signInWithEmailAndPassword(email: email, password: password);
+      print("Logged in successfully");
       return null;
     } on FirebaseAuthException catch (e) {
       return e.message;

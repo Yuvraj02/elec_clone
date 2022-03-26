@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:elec_clone/screens/HomePage.dart';
+import 'package:elec_clone/screens/home_screen.dart';
 import 'package:elec_clone/screens/auth_screens/register_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';

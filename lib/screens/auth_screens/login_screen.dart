@@ -1,9 +1,19 @@
-import 'package:elec_clone/screens/auth_helper.dart';
+import 'package:elec_clone/helper_classes/auth_helper.dart';
 import 'package:elec_clone/screens/auth_screens/login_with_phone_screen.dart';
 import 'package:elec_clone/screens/auth_screens/register_screen.dart';
+import 'package:elec_clone/screens/cart_screen.dart';
 import 'package:flutter/material.dart';
 
+import '../../model/product_model.dart';
+
 class Authentication extends StatelessWidget {
+
+  Product? product;
+
+  //NOTE : THIS MIGHT PRODUCE ERROR BECAUSE PRODUCT HERE CAN BE NULL
+  Authentication({Key? key, this.product}) : super(key: key);
+
+
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
@@ -50,11 +60,20 @@ class Authentication extends StatelessWidget {
                   ),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(primary: Colors.green),
-                      onPressed: (){
+                      onPressed: () async {
                         //var UID = await AuthenticationHelper.getCurrentUID();
                         //print(UID);
-                        AuthenticationHelper.signIn(
-                            emailController.text, passwordController.text);
+                        if (await AuthenticationHelper.signIn(
+                                emailController.text,
+                                passwordController.text) ==
+                            null) {
+                          // TODO // Step 1. Add the Product to the Cart
+                          // TODO // Step 2. Log in the person
+                          Navigator.pushReplacement(context,
+                              MaterialPageRoute(builder: (_) => Cart(product: product,)));
+                        } else {
+                          print("Invalid Email or Password");
+                        }
                       },
                       child: const Text(
                         "Login",

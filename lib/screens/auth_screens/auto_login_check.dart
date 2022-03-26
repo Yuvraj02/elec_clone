@@ -1,9 +1,9 @@
-import 'package:elec_clone/screens/auth_helper.dart';
+import 'package:elec_clone/helper_classes/auth_helper.dart';
 import 'package:elec_clone/screens/auth_screens/login_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-import '../HomePage.dart';
+import '../home_screen.dart';
 
 //TODO : Use named Routes
 

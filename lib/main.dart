@@ -1,4 +1,4 @@
-import 'package:elec_clone/screens/HomePage.dart';
+import 'package:elec_clone/screens/home_screen.dart';
 import 'package:elec_clone/screens/auth_screens/auto_login_check.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
